@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>HCDS 2027</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/menu.js"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container" id="home"></div>
+  <div class="content-container">
+    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url('img/banner.jpg');"
+      data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-10 text-center" data-aos="fade-up">
+            <h1>6th Workshop on Heterogeneous Composable and Disaggregated Systems</h1>
+            <h2>Co-located with ASPLOS 2027</h2>
+            <h2>TBD</h2>
+            <h2>April 11&ndash;12, 2027 (TBD)</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Workshop Overview</h2>
+          </div>
+        </div>
+
+        <!-- ABSTRACT -->
+        <div class="flex-row" style="scroll-margin-top: 200px" id="overview">
+          <div class="flex-item flex-column">
+            <h4 class="add-top-margin add-bottom-margin">Abstract</h4>
+          </div>
+          <div class="flex-item flex-column">
+            <p class="text text-justify">Modern computing infrastructures are becoming increasingly heterogeneous, integrating CPUs,
+              GPUs, NPUs, FPGAs, and specialized accelerators, alongside diverse memory technologies, to meet the growing
+              demands of emerging applications. However, efficiently composing and managing these heterogeneous resources
+              remains challenging, requiring new approaches to resource allocation, scheduling, communication, and
+              programming. At the same time, technologies such as Compute Express Link (CXL) enable new opportunities for
+              heterogeneous memory sharing, pooling, and disaggregation, increasing the flexibility and complexity of
+              computing systems.
+              <br>
+              Heterogeneity extends beyond hardware to the workloads running on these systems. Emerging applications,
+              including large language models (LLMs), multimodal AI, and agentic systems, exhibit diverse and dynamically
+              changing compute, memory, and communication requirements. Alongside HPC and data-intensive applications,
+              these workloads motivate new approaches to efficiently mapping and orchestrating heterogeneous resources.
+              <br>
+              HCDS 2027 invites original research on architectures, systems software, programming abstractions, and
+              evaluation methodologies for efficient, scalable, and reliable heterogeneous composable and disaggregated
+              systems.
+            <p>
+          </div>
+        </div>
+
+        <!-- IMPORTANT DATES -->
+        <hr>
+        <div class="flex-row add-top-margin add-bottom-margin" style="scroll-margin-top: 200px" id="dates">
+          <div class="flex-item flex-column">
+            <h2>Important Dates</h2>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text text-justify">These dates are tentative and may still change.</p>
+            <ul>
+              <li><span class="highlight-text">Paper submission deadline: </span>January 29, 2027 (AoE)</li>
+              <li>Author notification: February 19, 2027 (AoE)</li>
+              <li>Camera ready submissions: February 26, 2027 (AoE)</li>
+              <li>Workshop: April 11&ndash;12, 2027 (TBD)</li>
+            </ul>
+
+            <p class="text">
+              <h4>Submission Link</h4>
+              <span class="highlight-text">TBD</span>
+            </p>
+            
+          </div>
+        </div>
+
+        <!-- CFP -->
+        <hr>
+        <div class="flex-row add-top-margin add-bottom-margin" style="scroll-margin-top: 200px" id="cfp">
+          <div class="flex-item flex-column">
+            <h2>Call for Papers</h2>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            Heterogeneous and Composable Disaggregated Systems (HCDS), provide a system design approach for reducing the
+            imbalance between workloads resource requirements and the static availability of resources in a computing
+            system, while making room for novel distributed system approaches in processes communication and data
+            exchange.
+            <br>
+            The HCDS workshop aims at exploring the novel research ideas around composable disaggregated systems and
+            their integration with operating systems and software runtimes to maximize the benefit perceived from user
+            workloads.
+            <br><br>
+            Areas of interest include, but are not limited to:
+            <div class="flex-row">
+              <div class="flex-item flex-column add-top-margin">
+                <h4>System Software and Programming Models / Tools</h4>
+                <ul>
+                  <li>Operating-system designs for disaggregated resources: memory profiling, allocation, tiering, page
+                    migration, and data placement</li>
+                  <li>Control planes, runtime systems, and virtualization for composable compute, memory, and accelerator
+                    resources</li>
+                  <li>Programming models, interfaces, and profiling/analysis tools for heterogeneous resource composition</li>
+                  <li>Performance isolation, resource protection, QoS/SLO guarantees, and AI-assisted or agentic
+                    infrastructure management</li>
+                </ul>
+
+                <h4>Applications and Use Cases</h4>
+                <ul>
+                  <li>Composable infrastructure for LLM inference, serving, training, and fine-tuning, including
+                    disaggregated inference pipelines</li>
+                  <li>Agentic and multi-agent services on composable infrastructure, including shared-context placement,
+                    inter-agent communication, elastic resource allocation, and performance isolation across distributed
+                    resources</li>
+                  <li>KV-cache placement and movement, CXL memory sharing, accelerator pooling, and co-design of AI models
+                    with system disaggregation</li>
+                  <li>Data-intensive analytics, in-memory databases, graph processing, streaming pipelines, scientific
+                    applications, and HPC workloads</li>
+                </ul>
+
+                <h4>Modeling and Evaluation</h4>
+                <ul>
+                  <li>Performance, scalability, energy efficiency, and reliability characterization of heterogeneous
+                    composable systems</li>
+                  <li>Workload and infrastructure characterization for LLMs, agentic services, and heterogeneous execution
+                    environments</li>
+                  <li>Analysis of interference, remote-resource overhead, service guarantees, and total cost of ownership</li>
+                  <li>Models and evaluation methods for resource-management policies, including intelligent and adaptive
+                    provisioning</li>
+                </ul>
+
+                <h4>Hardware and Prototyping</h4>
+                <ul>
+                  <li>Heterogeneous CPU/GPU/NPU architectures, composable accelerators, CXL-based systems, and high-speed
+                    interconnects supporting resource disaggregation and cross-device communication</li>
+                  <li>Memory pooling, memory disaggregation, and heterogeneous accelerator sharing and composition</li>
+                  <li>Hardware&ndash;software interfaces for disaggregated resource discovery, access, isolation, and
+                    management</li>
+                  <li>System prototypes and proof-of-concept implementations demonstrating composability in practical
+                    deployments</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-row">
+            <div class="flex-item flex-column add-top-margin">
+              <p class="text">
+              <h3>Submission Instructions</h3>
+              </p>
+
+              <p class="text">Each manuscript will be evaluated with a <span class="highlight-text">double-blind review
+                  process</span>. Authors must omit at submission time their names or any information that can disclose
+                their identity. Manuscripts length must be <span class="highlight-text">4-6 pages including figures and
+                  tables but excluding references</span>. All manuscripts must use the <i>sigplan</i> <a
+                  href="https://www.acm.org/publications/proceedings-template">ACM conference style</a>. It is also
+                expected that all accepted papers will be presented at the workshop by one of the authors.
+                Papers accepted to the workshop will have the chance to be published on the ACM Digital Library
+                following the new ACM open access publishing model.
+                <br>
+                <br>
+                We offer the possibility to opt-out from
+                publishing submitted work to the ACM proceedings. This applies for instance to authors wishing to
+                re-submit an extended version to another venue that does not allow the work to have appeared in
+                official proceedings or, the authors are not part of the ACM open network and do not have the funds for
+                supporting the proceedings processing costs.
+                In such case, if your manuscript is accepted, it will only be published on the workshop website.
+                <span class="highlight-text">If you are wishing to do so, send the organizers an email right after
+                  submitting your manuscript. </span>
+                <br>
+                <br>
+                <span class="highlight-text">
+                  <u>Important note to authors about the new ACM open access publishing model</u><br></span>
+                ACM has introduced a new open access publishing model for the International Conference Proceedings
+                Series (ICPS).
+                Authors based at institutions that are not yet part of the <a
+                  href="https://libraries.acm.org/acmopen/open-participants">ACM Open program</a> and do not qualify for
+                a
+                waiver will be required to pay an article processing charge (APC) to publish their ICPS article in
+                the ACM Digital Library. To determine whether or not an APC will be applicable to your article,
+                please follow the detailed guidance <a
+                  href="https://www.acm.org/publications/icps/author-guidance">here</a>.<br>
+                Further information may be found on the ACM website, as follows:<br>
+              <ul>
+                <li>details of the new <a href="https://www.acm.org/publications/icps/faq"> ICPS publishing
+                    model</a></li>
+                <li>details of the <a href="https://www.acm.org/publications/openaccess">ACM Open program </a></li>
+              </ul>
+              Please direct all questions about the new ACM publishing model to
+              <a href="mailto:icps-info@acm.org">icps-info@acm.org</a>
+              <br>
+            
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- PROGRAM -->
+        <hr>
+        <div class="flex-row add-top-margin add-bottom-margin" id="program" style="scroll-margin-top: 200px">
+          <div class="flex-item flex-column">
+            <h2>Workshop Program</h2>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text">The workshop program will be announced soon.</p>
+          </div>
+        </div>
+
+        <!-- COMMITTES -->
+        <hr>
+        <div class="flex-row add-top-margin add-bottom-margin" id="committees" style="scroll-margin-top: 200px">
+          <div class="flex-item flex-column">
+            <h2>Committees</h2>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text">
+            <h4>Organizing Committee</h4>
+            </p>
+            <ul>
+              <li>Dimosthenis Masouros (National Technical University of Athens, Greece) &mdash; Primary Contact</li>
+              <li>Christina Giannoula (Max Planck Institute for Software Systems, Germany)</li>
+              <li>Thaleia Dimitra Doudali (IMDEA Software Institute, Spain)</li>
+              <li>Stefano Corda (Huawei Technologies Switzerland AG, Switzerland)</li>
+              <li>Antonis Psistakis (Google)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text">
+            <h4>Steering Committee</h4>
+            </p>
+            <ul>
+              <li>Christian Pinto (IBM Research Europe, Ireland)</li>
+              <li>Dong Li (University of California, Merced, USA)</li>
+              <li>Jie Ren (William &amp; Mary, USA)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text">
+            <h4>Program Co-Chairs</h4>
+            </p>
+            <ul>
+              <li>Dimosthenis Masouros (National Technical University of Athens, Greece)</li>
+              <li>Christina Giannoula (Max Planck Institute for Software Systems, Germany)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text">
+            <h4>Program Committee</h4>
+            </p>
+            <ul>
+              <li>To be announced</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PAST EDITIONS -->
+        <hr>
+        <div class="flex-row" id="past" style="scroll-margin-top: 200px">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin add-bottom-margin">Past Editions</h2>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <ul>
+              <li><a href="https://hcds-workshop.github.io/edition/2026">
+                  <h5>HCDS 2026</h5>
+                </a></li>
+              <li><a href="https://hcds-workshop.github.io/edition/2025">
+                  <h5>HCDS 2025</h5>
+                </a></li>
+              <li><a href="https://hcds-workshop.github.io/edition/2024">
+                  <h5>HCDS 2024</h5>
+                </a></li>
+              <li><a href="https://hcm-workshop.github.io/">
+                  <h5>HCM 2023</h5>
+                </a></li>
+              <li><a href="https://compsysworkshop.github.io/compsys23">
+                  <h5>COMPSYS 2023</h5>
+                </a></li>
+              <li><a href="https://compsysworkshop.github.io/compsys22">
+                  <h5>COMPSYS 2022</h5>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+
+
+
+        <!-- CONTACTS -->
+        <hr>
+        <div class="flex-row" id="Contacts" style="scroll-margin-top: 200px">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin add-bottom-margin">Contacts</h2>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text">Email Us: hcdsworkshop[at]gmail[dot]com</a> for any question.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
